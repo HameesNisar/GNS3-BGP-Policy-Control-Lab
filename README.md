@@ -135,7 +135,3 @@ show running-config | include next-hop-self
 - BGP path selection tuning
 The topology demonstrates realistic service-provider-level routing control using Cisco IOS and GNS3.
 ---
-
-
-show ip bgp summary
-show ip bgp neighbors
