@@ -1,10 +1,7 @@
 # Advanced BGP Policy Control Lab (GNS3)
 
-This project demonstrates an advanced BGP design built on **GNS3**, focusing heavily on  
-**policy-based control of route selection** across multiple Autonomous Systems.  
-The lab includes **iBGP**, **eBGP**, **route reflectors**, and advanced attributes such as  
-**Local Preference**, **MED**, **Cisco Weight**, **Next-Hop-Self**, and **route filtering**  
-using distribute-lists.
+This project demonstrates an advanced BGP design built on **GNS3**, focusing heavily on **policy-based control of route selection** across multiple Autonomous Systems.  
+The lab includes **iBGP**, **eBGP**, **route reflectors**, and advanced attributes such as **Local Preference**, **MED**, **Cisco Weight**, **Next-Hop-Self**, and **route filtering**  using distribute-lists.
 
 ---
 
@@ -17,9 +14,7 @@ using distribute-lists.
 
 ## 📘 Overview
 
-This lab consists of **four BGP Autonomous Systems** exchanging routes using both **eBGP**  
-and **iBGP** sessions. The main objective was to understand and manipulate BGP’s path  
-selection process across multiple networks using attribute tuning and route reflection.
+This lab consists of **four BGP Autonomous Systems** exchanging routes using both **eBGP** and **iBGP** sessions. The main objective was to understand and manipulate BGP’s path selection process across multiple networks using attribute tuning and route reflection.
 
 The network includes:
 
