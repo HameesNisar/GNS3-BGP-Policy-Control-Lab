@@ -1,0 +1,336 @@
+autostart = False
+version = 0.8.6
+[127.0.0.1:7202]
+    workingdir = C:\Users\freet\AppData\Local\Temp
+    udp = 10201
+    [[7200]]
+        image = C:\Users\freet\Desktop\GNS3\c7200-a3jk9s-mz.124-25g.image
+        ram = 128
+        idlepc = 0x608927c0
+        sparsemem = True
+    [[ROUTER R10]]
+        console = 2110
+        aux = 2510
+        cnfg = configs\R10.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = R6 f1/1
+        f1/1 = R7 f1/1
+        slot2 = PA-2FE-TX
+        f2/0 = R8 f1/1
+        x = 880.386868352
+        y = -152.669047558
+        z = 1.0
+    [[ROUTER R9]]
+        console = 2109
+        aux = 2509
+        cnfg = configs\R9.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = R4 f2/0
+        f1/1 = R8 f2/0
+        x = -136.213203436
+        y = 407.610173055
+        z = 1.0
+[127.0.0.1:7200]
+    workingdir = C:\Users\freet\AppData\Local\Temp
+    udp = 10001
+    [[7200]]
+        image = C:\Users\freet\Desktop\GNS3\c7200-a3jk9s-mz.124-25g.image
+        ram = 128
+        idlepc = 0x608927c0
+        sparsemem = True
+    [[ROUTER R4]]
+        console = 2104
+        aux = 2504
+        cnfg = configs\R4.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = R1 f2/0
+        f1/1 = R5 f2/0
+        slot2 = PA-2FE-TX
+        f2/0 = R9 f1/0
+        x = -468.941125497
+        y = 37.5025253169
+        z = 1.0
+    [[ROUTER R2]]
+        console = 2102
+        aux = 2502
+        cnfg = configs\R2.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = R1 f1/0
+        f1/1 = R5 f1/0
+        x = -461.526911935
+        y = -354.74011537
+        z = 1.0
+    [[ROUTER R3]]
+        console = 2103
+        aux = 2503
+        cnfg = configs\R3.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = R1 f1/1
+        f1/1 = R5 f1/1
+        x = -469.941125497
+        y = -158.74011537
+        z = 1.0
+    [[ROUTER R1]]
+        console = 2101
+        aux = 2501
+        cnfg = configs\R1.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = R2 f1/0
+        f1/1 = R3 f1/0
+        slot2 = PA-2FE-TX
+        f2/0 = R4 f1/0
+        x = -1019.24473273
+        y = -166.053823869
+        z = 1.0
+[127.0.0.1:7201]
+    workingdir = C:\Users\freet\AppData\Local\Temp
+    udp = 10101
+    [[7200]]
+        image = C:\Users\freet\Desktop\GNS3\c7200-a3jk9s-mz.124-25g.image
+        ram = 128
+        idlepc = 0x608927c0
+        sparsemem = True
+    [[ROUTER R5]]
+        console = 2105
+        aux = 2505
+        cnfg = configs\R5.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = R2 f1/1
+        f1/1 = R3 f1/1
+        slot2 = PA-2FE-TX
+        f2/0 = R4 f1/1
+        f2/1 = R6 f1/0
+        slot3 = PA-2FE-TX
+        f3/0 = R7 f1/0
+        f3/1 = R8 f1/0
+        x = -149.526911935
+        y = -153.74011537
+        z = 1.0
+    [[ROUTER R6]]
+        console = 2106
+        aux = 2506
+        cnfg = configs\R6.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = R5 f2/1
+        f1/1 = R10 f1/0
+        x = 151.887301628
+        y = -361.74011537
+        z = 1.0
+    [[ROUTER R7]]
+        console = 2107
+        aux = 2507
+        cnfg = configs\R7.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = R5 f3/0
+        f1/1 = R10 f1/1
+        x = 143.887301628
+        y = -165.325901808
+        z = 1.0
+    [[ROUTER R8]]
+        console = 2108
+        aux = 2508
+        cnfg = configs\R8.cfg
+        slot1 = PA-2FE-TX
+        f1/0 = R5 f3/1
+        f1/1 = R10 f2/0
+        slot2 = PA-2FE-TX
+        f2/0 = R9 f1/1
+        x = 144.473088065
+        y = 23.2598846298
+        z = 1.0
+[GNS3-DATA]
+    configs = configs
+    m11 = 0.707106781187
+    m22 = 0.707106781187
+    [[NOTE 1]]
+        text = "RR = Route-reflector-client\nNHS = Next hop self"
+        x = -1169.55461608
+        y = -567.457502888
+    [[NOTE 2]]
+        text = "localpreference-500-in"
+        x = -533.158513015
+        y = -422.59754647
+    [[NOTE 3]]
+        text = "2.0.0.0/8"
+        x = -705.692567624
+        y = -171.67871555
+    [[NOTE 4]]
+        text = "1.0.0.0/8"
+        x = -739.633693121
+        y = -274.715295477
+    [[NOTE 5]]
+        text = "localpreference-400-in"
+        x = 113.13708499
+        y = -437.141702348
+    [[NOTE 6]]
+        text = "localpreference-500-in"
+        x = 387.49451609
+        y = 1.46551211459
+    [[NOTE 7]]
+        text = "metric-100-out"
+        x = 384.666088966
+        y = -172.080735804
+    [[NOTE 8]]
+        text = "weight-500-in"
+        x = -527.501658765
+        y = 135.004617358
+    [[NOTE 9]]
+        text = "metric-100-out"
+        x = 114.551298553
+        y = -412.698051534
+    [[NOTE 10]]
+        text = "metric-100-out"
+        x = -533.158513014
+        y = 113.791413922
+    [[NOTE 11]]
+        text = "12.0.0.0/8"
+        x = 541.643794389
+        y = -265.813708499
+    [[NOTE 12]]
+        text = "RR"
+        x = -131.521861301
+        y = -102.181240867
+    [[NOTE 13]]
+        text = "NHS"
+        x = -458.205194209
+        y = -118.139610307
+    [[NOTE 14]]
+        text = "NHS"
+        x = -453.962553521
+        y = -313.502092041
+    [[NOTE 15]]
+        text = "13.0.0.0/8"
+        x = 544.472221514
+        y = -164.191342135
+    [[NOTE 16]]
+        text = "NHS"
+        x = -485.075251894
+        y = 84.2939392394
+    [[NOTE 17]]
+        text = "NHS"
+        x = 175.362481734
+        y = 64.9041122946
+    [[NOTE 18]]
+        text = "NHS"
+        x = 164.048773236
+        y = -315.11731573
+    [[NOTE 19]]
+        text = "NHS"
+        x = 166.87720036
+        y = -115.914213562
+    [[NOTE 20]]
+        text = "5.0.0.0/8"
+        x = -342.239682094
+        y = -170.867532368
+    [[NOTE 21]]
+        text = "6.0.0.0/8"
+        x = -370.523953342
+        y = -60.7598846298
+    [[NOTE 22]]
+        text = "7.0.0.0/8"
+        x = -274.3574311
+        y = 214.810749906
+    [[NOTE 23]]
+        text = "8.0.0.0/8"
+        x = -43.8406204336
+        y = 210.367099092
+    [[NOTE 24]]
+        text = "9.0.0.0/8"
+        x = -22.627416998
+        y = -34.4928573251
+    [[NOTE 25]]
+        text = "10.0.0.0/8"
+        x = 1.41421356237
+        y = -170.45836944
+    [[NOTE 26]]
+        text = "11.0.0.0/8"
+        x = -26.8700576851
+        y = -292.281745931
+    [[NOTE 27]]
+        text = "14.0.0.0/8"
+        x = 572.756492761
+        y = -50.6522368915
+    [[NOTE 28]]
+        text = "3.0.0.0/8"
+        x = -717.006276123
+        y = -65.813708499
+    [[NOTE 29]]
+        text = "metric-100-out"
+        x = -535.986940139
+        y = -400.781312654
+    [[NOTE 30]]
+        text = "4.0.0.0/8"
+        x = -321.026478659
+        y = -290.874675043
+    [[NOTE 31]]
+        text = "ASN - 112"
+        x = -1011.1626971
+        y = -312.899061661
+        font = "Segoe UI Variable Display Semib,16,-1,5,63,0,0,0,0,0"
+        color = "#ff0000"
+    [[NOTE 32]]
+        text = "ASN - 111"
+        x = -142.8355698
+        y = -518.161038332
+        font = "Segoe UI Variable Display Semib,16,-1,5,63,0,0,0,0,0"
+        color = "#ff0000"
+    [[NOTE 33]]
+        text = "112.0.0.0/8\n121.0.0.0/8"
+        x = -1132.78506346
+        y = -171.477705423
+    [[NOTE 34]]
+        text = "114.0.0.0/8\n144.0.0.0/16"
+        x = -155.563491861
+        y = 451.989465456
+    [[NOTE 35]]
+        text = "ASN - 113"
+        x = 886.711903608
+        y = -285.016810667
+        font = "Segoe UI Variable Display Semib,16,-1,5,63,0,0,0,0,0"
+        color = "#ff0000"
+    [[NOTE 36]]
+        text = "ASN - 114"
+        x = -149.906637612
+        y = 539.26868607
+        font = "Segoe UI Variable Display Semib,16,-1,5,63,0,0,0,0,0"
+        color = "#ff0000"
+    [[NOTE 37]]
+        text = "weight-500-in"
+        x = 76.3675323681
+        y = 186.117315731
+    [[NOTE 38]]
+        text = "localpreference-500-in"
+        x = -523.259018078
+        y = 188.543722601
+    [[NOTE 39]]
+        text = "113.0.0.0/8\n133.0.0.0/16"
+        x = 957.422581727
+        y = -156.323376491
+    [[NOTE 40]]
+        text = "101.0.0.0/8\n111.0.0.0/8"
+        x = -164.048773235
+        y = -235.720346111
+    [[SHAPE 1]]
+        type = rectangle
+        x = -550.732106143
+        y = -470.121933089
+        width = 936.812408671
+        height = 655.383909759
+    [[SHAPE 2]]
+        type = rectangle
+        x = -1162.48354827
+        y = -264.457936164
+        width = 412.950360213
+        height = 232.936074863
+    [[SHAPE 3]]
+        type = rectangle
+        x = -315.570634536
+        y = 301.026478659
+        width = 412.950360213
+        height = 232.936074863
+    [[SHAPE 4]]
+        type = rectangle
+        x = 702.462120246
+        y = -246.475180106
+        width = 412.950360213
+        height = 232.936074863
